@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+    <style>
+        body {
+            text-align: center;
+            
+        }
+
+        #container {
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            height: 400px; 
+            object-fit: cover; 
+        }
+
+        #buttons-container {
+            position: absolute;
+            bottom: 10px; 
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        button {
+            background-color: pink;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="slideshow-img" src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg">
+        <div id="buttons-container">
+            <button onclick="prev()">Previous</button>
+            <button onclick="next()">Next</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
